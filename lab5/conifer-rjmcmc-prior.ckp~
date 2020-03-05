@@ -1,0 +1,38 @@
+#NEXUS
+[ID: 4286033067]
+[generation: 1998000]
+
+begin trees;
+	translate
+       1 Ginkgo_biloba,
+       2 Araucaria_araucana,
+       3 Cedrus_deodara,
+       4 Cupressus_arizonica,
+       5 Juniperus_communis,
+       6 Pinus_densiflora,
+       7 Podocarpus_chinensis,
+       8 Sciadopitys_verticillata,
+       9 Taxus_baccata;
+	tree mcmc.tree_1 = ((9:1.098826980768438e-01,7:1.487001715133308e-01):3.340001181068663e-02,(2:1.482488734882278e-01,((6:6.590577813814021e-03,(5:9.554969410048181e-02,4:1.051701248445722e-02):1.073643951072495e-02):1.125854864919694e-01,(8:6.111204422399255e-03,3:2.183095849053117e-02):1.249895997846153e-01):2.120080781764918e-01):1.000685877678126e-01,1:1.045686862540658e-01);
+end;
+
+begin mrbayes;
+	startvals
+		Tau(1,1)=mcmc.tree_1
+		V(1,1)=mcmc.tree_1
+		Revmat(1,1)=(1.515736692634740e-01,1.515736692634740e-01,2.200922552497058e-01,1.736130676963981e-01,1.515736692634740e-01,1.515736692634740e-01,0,0,1,2,0,0)
+		Pi(1,1)=(2.022062838146597e-01,5.609250569272281e-02,5.954486721182148e-01,1.462525383744025e-01)
+		Alpha(1,1)=(7.176503784575269e-02)
+	;
+	propset
+		Dirichlet(Revmat)$alpha(1,1)=2.573251272636135e+00
+		Splitmerge1(Revmat)$alpha(1,1)=5.028743672359208e-01
+		Splitmerge2(Revmat)$alpha(1,1)=5.028743672359208e-01
+		Dirichlet(Pi)$alpha(1,1)=1.652988882215930e+01
+		Slider(Pi)$delta(1,1)=9.906064848790246e-01
+		Multiplier(Alpha)$lambda(1,1)=9.978439594496471e+00
+		Multiplier(V)$lambda(1,1)=1.468217627740327e+01
+		TLMultiplier(V)$lambda(1,1)=1.453608618251909e+01
+	;
+end;
+
