@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+SUPERMATRIX AND SPECIES TREE METHODS RESOLVE PHYLOGENETIC RELATIONSHIPS WITHIN THE BIG CATS, PANTHERA (CARNIVORA: FELIDAE): REVIEW AND TREE RECONSTRUCTION
+Alexandra González
+
+
+
+
+
+Phylogenetic Relationships of Big Cats; Genus Panthera
+Based on Brian W. Davis, Gang Li, William J. Murphy article, Supermatrix and species tree methods resolve phylogenetic relationships within the big cats, Panthera (Carnivora: Felidae), I will be working to form the phylogenetic tree results that they got when they used three methods, in which resulted in three topology phylogenetic trees. The species that they used were the lion (Panthera Leo), Leopard (Panthera Pardus), Tiger (Panthera Tigris), Jaguar (Panthera Onca), and Snow Leopard (Panthera Uncia). There is also an outgroup used, the Clouded Leopard (Neofelis Nebulosa). They were conducting various possible trees to link them on from the other by using DNA sequence data and GenBank. In order to get their date, they used GenBank and Blast to use multiple genomes of all the species found in the genus Panthera. 
+In their DNA sequencing data, they used sex chromosomes and mitochondrial genomes, which included 39 single-copy of Y chromosomes, 4 mitochondrial and 4 autosomal gene segments. The methods that they used to get the phylogenetic trees were Maximum Likelihood, Bayesian Phylogenetic Interference, and Bayesian Estimation of Species Trees (BEST).The purpose of using these methods was to make a supermatrix of these species in order to determine whether any of these species had a monophyly with each other based on their similar topologies They used ClustalX 2.0.3 in order to align the sequence they needed. The researchers used PAUP to perform Maximum Likelihood tree searchers and MrBayes analysis to show summary of tree statistics.
+ 
+ Procedures Used on the study:
+ GenBank: all six species were obtained there; being the same length sequences and aligned by eye
+ MrBayes for Bayesian Interference
+ Paup and Akaike Information Criteria for Maximum Likelihood analysis
+ Bayesian estimation of Species trees analysis with a modified MrBayes package
+ Paup was also used for molecular dating, as well as showing tree statistics
+ 
+My plan was to re-make their phylogenetic tree of having the lion and leopard as a monophyly, while the jaguar is a sister taxon for the group, as well as sister taxon for the leopard and tiger. First thing to do was to find the data set they used and used the Maximum likelihood and the Bayesian Phylogenetic Interference methods to see if I have conducted topological phylogenetic trees. The sequence that I used in order to attempt to reconstruct this tree were mitochondrial whole genomes of the five big cat species from Blast.
+Name	Accession Number	Length
+Panthera Leo	 KF776494.1	17,054bp
+Panthera Onca	KM236783.1	17,063bp
+Panthera Tigris	EF551003.1	16,990bp
+Panthera Pardus	EF551002.1	16,964bp
+Panthera Uncia	EF551004.1	16,973bp
+Neofelis Nebulosa	KU133958.1	16,859bp
+Once these sequences are downloaded, I made a new directory with these sequences in both FASTA and Nexuss formats. 
+FelidaeFasta.txt
+FelidaeNexus.nexuss
+
+Progess:
+I am having to go back to the article to try to recreate the some of the sequences in order to accomplish the same results.
+Trying to align the sequences using MAFFT, I realized that I have been using individual gene files instead of whole genome sequences.
+In the process of getting new sequences and will have to go step by step on the paper and see whether I can use one of the three analysis they used in order to build the tree.
+
+
